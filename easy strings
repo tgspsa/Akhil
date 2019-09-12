@@ -1,0 +1,13 @@
+    s=input()
+    s2=s.casefold()
+    l2=len(s2)
+    c=1
+    for i in range(0,l2-1):
+        if s2[i]==s2[i+1]:
+            c+=1
+        else:
+            print(c,end="")
+            print(s2[i],end="")
+            c=1
+    print(c,end="")
+    print(s2[l2-1])
